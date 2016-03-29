@@ -2,12 +2,13 @@
 import React from 'react';
 import {mount} from 'react-mounter';
 // load Layout and Welcome React components
-import {Layout, Welcome} from '../app.jsx';
+import Componente from './componente.jsx';
+import Layout from './layout.jsx';
 
 FlowRouter.route("/", {
   action() {
     mount(Layout, {
-        content: (<Welcome name="arunoda"/>)
+        content: (<Componente />)
     });
   }
 });
