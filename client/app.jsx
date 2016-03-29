@@ -1,18 +1,22 @@
 
 import React from 'react';
 
+import {Navbar} from './navbar.jsx';
+
 // define and export our Layout component
 export const Layout = ({content}) => (
+    //<Navbar />
     <div>
-        <h1>My App</h1>
-        <hr />
         <div>{content}</div>
     </div>
 );
 
-// define and export our Welcome component
-export const Welcome = ({name}) => (
-    <div>
-        Hello, {name}.
-    </div>
-);
+
+// Task component - represents a single todo item
+export default class Welcome extends React.Component {
+  render() {
+    return (
+      <div>Hola a todos</div>
+    );
+  }
+}
